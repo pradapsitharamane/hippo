@@ -44,10 +44,13 @@
             this.dgCourses = new System.Windows.Forms.DataGridView();
             this.tabgeneral = new System.Windows.Forms.TabControl();
             this.tabCheval = new System.Windows.Forms.TabPage();
+            this.tabPradap = new System.Windows.Forms.TabPage();
+            this.btnPradap = new System.Windows.Forms.Button();
             this.tabCourse.SuspendLayout();
             this.gbDetailCourse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).BeginInit();
             this.tabgeneral.SuspendLayout();
+            this.tabPradap.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCourse
@@ -194,6 +197,7 @@
             // 
             this.tabgeneral.Controls.Add(this.tabCheval);
             this.tabgeneral.Controls.Add(this.tabCourse);
+            this.tabgeneral.Controls.Add(this.tabPradap);
             this.tabgeneral.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabgeneral.Location = new System.Drawing.Point(4, 5);
             this.tabgeneral.Name = "tabgeneral";
@@ -212,6 +216,27 @@
             this.tabCheval.Text = "Les chevaux";
             this.tabCheval.UseVisualStyleBackColor = true;
             // 
+            // tabPradap
+            // 
+            this.tabPradap.Controls.Add(this.btnPradap);
+            this.tabPradap.Location = new System.Drawing.Point(4, 28);
+            this.tabPradap.Name = "tabPradap";
+            this.tabPradap.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPradap.Size = new System.Drawing.Size(1043, 472);
+            this.tabPradap.TabIndex = 2;
+            this.tabPradap.Text = "Pradap";
+            this.tabPradap.UseVisualStyleBackColor = true;
+            // 
+            // btnPradap
+            // 
+            this.btnPradap.Location = new System.Drawing.Point(472, 229);
+            this.btnPradap.Name = "btnPradap";
+            this.btnPradap.Size = new System.Drawing.Size(75, 23);
+            this.btnPradap.TabIndex = 0;
+            this.btnPradap.Text = "clique !!!";
+            this.btnPradap.UseVisualStyleBackColor = true;
+            this.btnPradap.Click += new System.EventHandler(this.btnPradap_Click);
+            // 
             // Fgeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +251,7 @@
             this.gbDetailCourse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).EndInit();
             this.tabgeneral.ResumeLayout(false);
+            this.tabPradap.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -248,6 +274,8 @@
         private System.Windows.Forms.DataGridView dgCourses;
         private System.Windows.Forms.TabControl tabgeneral;
         private System.Windows.Forms.TabPage tabCheval;
+        private System.Windows.Forms.TabPage tabPradap;
+        private System.Windows.Forms.Button btnPradap;
 
     }
 }
