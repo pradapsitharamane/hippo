@@ -69,11 +69,10 @@ namespace hippodrome
 
         }
 
-        private void btStaffieri_Click(object sender, EventArgs e)
+        private void btnPradap_Click(object sender, EventArgs e)
         {
-            lblStaffieri.Visible = true;
-        }
-
+            MessageBox.Show("Code de Pradap");
+        }              
      }       
     }
 
