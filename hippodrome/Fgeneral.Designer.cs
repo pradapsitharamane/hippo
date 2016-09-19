@@ -44,10 +44,14 @@
             this.dgCourses = new System.Windows.Forms.DataGridView();
             this.tabgeneral = new System.Windows.Forms.TabControl();
             this.tabCheval = new System.Windows.Forms.TabPage();
+            this.tabStaffieri = new System.Windows.Forms.TabPage();
+            this.btStaffieri = new System.Windows.Forms.Button();
+            this.lblStaffieri = new System.Windows.Forms.Label();
             this.tabCourse.SuspendLayout();
             this.gbDetailCourse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).BeginInit();
             this.tabgeneral.SuspendLayout();
+            this.tabStaffieri.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCourse
@@ -194,6 +198,7 @@
             // 
             this.tabgeneral.Controls.Add(this.tabCheval);
             this.tabgeneral.Controls.Add(this.tabCourse);
+            this.tabgeneral.Controls.Add(this.tabStaffieri);
             this.tabgeneral.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabgeneral.Location = new System.Drawing.Point(4, 5);
             this.tabgeneral.Name = "tabgeneral";
@@ -212,6 +217,38 @@
             this.tabCheval.Text = "Les chevaux";
             this.tabCheval.UseVisualStyleBackColor = true;
             // 
+            // tabStaffieri
+            // 
+            this.tabStaffieri.Controls.Add(this.lblStaffieri);
+            this.tabStaffieri.Controls.Add(this.btStaffieri);
+            this.tabStaffieri.Location = new System.Drawing.Point(4, 28);
+            this.tabStaffieri.Name = "tabStaffieri";
+            this.tabStaffieri.Padding = new System.Windows.Forms.Padding(3);
+            this.tabStaffieri.Size = new System.Drawing.Size(1043, 472);
+            this.tabStaffieri.TabIndex = 2;
+            this.tabStaffieri.Text = "Staffieri";
+            this.tabStaffieri.UseVisualStyleBackColor = true;
+            // 
+            // btStaffieri
+            // 
+            this.btStaffieri.Location = new System.Drawing.Point(387, 169);
+            this.btStaffieri.Name = "btStaffieri";
+            this.btStaffieri.Size = new System.Drawing.Size(226, 106);
+            this.btStaffieri.TabIndex = 0;
+            this.btStaffieri.Text = "Mon nom";
+            this.btStaffieri.UseVisualStyleBackColor = true;
+            this.btStaffieri.Click += new System.EventHandler(this.btStaffieri_Click);
+            // 
+            // lblStaffieri
+            // 
+            this.lblStaffieri.AutoSize = true;
+            this.lblStaffieri.Location = new System.Drawing.Point(467, 278);
+            this.lblStaffieri.Name = "lblStaffieri";
+            this.lblStaffieri.Size = new System.Drawing.Size(59, 19);
+            this.lblStaffieri.TabIndex = 1;
+            this.lblStaffieri.Text = "Staffieri";
+            this.lblStaffieri.Visible = false;
+            // 
             // Fgeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +263,8 @@
             this.gbDetailCourse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).EndInit();
             this.tabgeneral.ResumeLayout(false);
+            this.tabStaffieri.ResumeLayout(false);
+            this.tabStaffieri.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,6 +287,9 @@
         private System.Windows.Forms.DataGridView dgCourses;
         private System.Windows.Forms.TabControl tabgeneral;
         private System.Windows.Forms.TabPage tabCheval;
+        private System.Windows.Forms.TabPage tabStaffieri;
+        private System.Windows.Forms.Button btStaffieri;
+        private System.Windows.Forms.Label lblStaffieri;
 
     }
 }

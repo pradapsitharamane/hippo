@@ -67,7 +67,13 @@ namespace hippodrome
         private void btAjoutCourse_Click(object sender, EventArgs e)
         {
 
-        }              
+        }
+
+        private void btStaffieri_Click(object sender, EventArgs e)
+        {
+            lblStaffieri.Visible = true;
+        }
+
      }       
     }
 
