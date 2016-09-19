@@ -67,6 +67,11 @@ namespace hippodrome
         private void btAjoutCourse_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPradap_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Code de Pradap");
         }              
      }       
     }
