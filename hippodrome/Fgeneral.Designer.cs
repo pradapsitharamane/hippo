@@ -44,10 +44,14 @@
             this.dgCourses = new System.Windows.Forms.DataGridView();
             this.tabgeneral = new System.Windows.Forms.TabControl();
             this.tabCheval = new System.Windows.Forms.TabPage();
+            this.tabChiousse = new System.Windows.Forms.TabPage();
+            this.BtnNomChiousse = new System.Windows.Forms.Button();
+            this.lblNomChiousse = new System.Windows.Forms.Label();
             this.tabCourse.SuspendLayout();
             this.gbDetailCourse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).BeginInit();
             this.tabgeneral.SuspendLayout();
+            this.tabChiousse.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCourse
@@ -194,6 +198,7 @@
             // 
             this.tabgeneral.Controls.Add(this.tabCheval);
             this.tabgeneral.Controls.Add(this.tabCourse);
+            this.tabgeneral.Controls.Add(this.tabChiousse);
             this.tabgeneral.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabgeneral.Location = new System.Drawing.Point(4, 5);
             this.tabgeneral.Name = "tabgeneral";
@@ -212,6 +217,37 @@
             this.tabCheval.Text = "Les chevaux";
             this.tabCheval.UseVisualStyleBackColor = true;
             // 
+            // tabChiousse
+            // 
+            this.tabChiousse.Controls.Add(this.lblNomChiousse);
+            this.tabChiousse.Controls.Add(this.BtnNomChiousse);
+            this.tabChiousse.Location = new System.Drawing.Point(4, 28);
+            this.tabChiousse.Name = "tabChiousse";
+            this.tabChiousse.Size = new System.Drawing.Size(1043, 472);
+            this.tabChiousse.TabIndex = 2;
+            this.tabChiousse.Text = "Chiousse";
+            this.tabChiousse.UseVisualStyleBackColor = true;
+            // 
+            // BtnNomChiousse
+            // 
+            this.BtnNomChiousse.Location = new System.Drawing.Point(51, 59);
+            this.BtnNomChiousse.Name = "BtnNomChiousse";
+            this.BtnNomChiousse.Size = new System.Drawing.Size(88, 32);
+            this.BtnNomChiousse.TabIndex = 0;
+            this.BtnNomChiousse.Text = "Ton nom";
+            this.BtnNomChiousse.UseVisualStyleBackColor = true;
+            this.BtnNomChiousse.Click += new System.EventHandler(this.BtnNomChiousse_Click);
+            // 
+            // lblNomChiousse
+            // 
+            this.lblNomChiousse.AutoSize = true;
+            this.lblNomChiousse.Location = new System.Drawing.Point(145, 66);
+            this.lblNomChiousse.Name = "lblNomChiousse";
+            this.lblNomChiousse.Size = new System.Drawing.Size(97, 19);
+            this.lblNomChiousse.TabIndex = 1;
+            this.lblNomChiousse.Text = "Code de Yann";
+            this.lblNomChiousse.Visible = false;
+            // 
             // Fgeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +262,8 @@
             this.gbDetailCourse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).EndInit();
             this.tabgeneral.ResumeLayout(false);
+            this.tabChiousse.ResumeLayout(false);
+            this.tabChiousse.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,6 +286,9 @@
         private System.Windows.Forms.DataGridView dgCourses;
         private System.Windows.Forms.TabControl tabgeneral;
         private System.Windows.Forms.TabPage tabCheval;
+        private System.Windows.Forms.TabPage tabChiousse;
+        private System.Windows.Forms.Label lblNomChiousse;
+        private System.Windows.Forms.Button BtnNomChiousse;
 
     }
 }
