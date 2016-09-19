@@ -44,10 +44,14 @@
             this.dgCourses = new System.Windows.Forms.DataGridView();
             this.tabgeneral = new System.Windows.Forms.TabControl();
             this.tabCheval = new System.Windows.Forms.TabPage();
+            this.tbdufau = new System.Windows.Forms.TabPage();
+            this.btname = new System.Windows.Forms.Button();
+            this.lbname = new System.Windows.Forms.Label();
             this.tabCourse.SuspendLayout();
             this.gbDetailCourse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).BeginInit();
             this.tabgeneral.SuspendLayout();
+            this.tbdufau.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCourse
@@ -194,6 +198,7 @@
             // 
             this.tabgeneral.Controls.Add(this.tabCheval);
             this.tabgeneral.Controls.Add(this.tabCourse);
+            this.tabgeneral.Controls.Add(this.tbdufau);
             this.tabgeneral.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabgeneral.Location = new System.Drawing.Point(4, 5);
             this.tabgeneral.Name = "tabgeneral";
@@ -212,6 +217,37 @@
             this.tabCheval.Text = "Les chevaux";
             this.tabCheval.UseVisualStyleBackColor = true;
             // 
+            // tbdufau
+            // 
+            this.tbdufau.Controls.Add(this.lbname);
+            this.tbdufau.Controls.Add(this.btname);
+            this.tbdufau.Location = new System.Drawing.Point(4, 28);
+            this.tbdufau.Name = "tbdufau";
+            this.tbdufau.Size = new System.Drawing.Size(1043, 472);
+            this.tbdufau.TabIndex = 2;
+            this.tbdufau.Text = "TabDufau";
+            this.tbdufau.UseVisualStyleBackColor = true;
+            // 
+            // btname
+            // 
+            this.btname.Location = new System.Drawing.Point(154, 87);
+            this.btname.Name = "btname";
+            this.btname.Size = new System.Drawing.Size(125, 60);
+            this.btname.TabIndex = 0;
+            this.btname.Text = "Présentation";
+            this.btname.UseVisualStyleBackColor = true;
+            this.btname.Click += new System.EventHandler(this.btname_Click);
+            // 
+            // lbname
+            // 
+            this.lbname.AutoSize = true;
+            this.lbname.Location = new System.Drawing.Point(328, 108);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(150, 19);
+            this.lbname.TabIndex = 1;
+            this.lbname.Text = "Je suis DUFAU Manon";
+            this.lbname.Visible = false;
+            // 
             // Fgeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +262,8 @@
             this.gbDetailCourse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).EndInit();
             this.tabgeneral.ResumeLayout(false);
+            this.tbdufau.ResumeLayout(false);
+            this.tbdufau.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,6 +286,9 @@
         private System.Windows.Forms.DataGridView dgCourses;
         private System.Windows.Forms.TabControl tabgeneral;
         private System.Windows.Forms.TabPage tabCheval;
+        private System.Windows.Forms.TabPage tbdufau;
+        private System.Windows.Forms.Label lbname;
+        private System.Windows.Forms.Button btname;
 
     }
 }

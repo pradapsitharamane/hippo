@@ -67,6 +67,11 @@ namespace hippodrome
         private void btAjoutCourse_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btname_Click(object sender, EventArgs e)
+        {
+            lbname.Visible = true;
         }              
      }       
     }
